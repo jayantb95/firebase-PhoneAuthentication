@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Firebase Phone Authentication</string>
+    <string name="country_code">+91</string>
+    <string name="btn_send">Send OTP</string>
+    <string name="btn_check">Verify</string>
+    <string name="edt_mob_num">Enter Mobile Number</string>
+    <string name="edt_otp">Enter OTP</string>
+</resources>
