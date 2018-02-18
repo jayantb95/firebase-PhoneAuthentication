@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FirebasePhoneAuthentication.iml" filepath="$PROJECT_DIR$/FirebasePhoneAuthentication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firebase-PhoneAuthentication.iml" filepath="$PROJECT_DIR$/firebase-PhoneAuthentication.iml" />
     </modules>
   </component>
 </project>

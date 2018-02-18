@@ -5,4 +5,6 @@
     <string name="btn_check">Verify</string>
     <string name="edt_mob_num">Enter Mobile Number</string>
     <string name="edt_otp">Enter OTP</string>
+    <string name="txt_resend_otp_timer">Resend OTP in: 00:</string>
+    <string name="btn_resend_otp">Resend OTP</string>
 </resources>

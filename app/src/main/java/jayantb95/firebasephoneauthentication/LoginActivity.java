@@ -121,7 +121,7 @@ public class LoginActivity extends AppCompatActivity {
                 //for showing countdown timer
                 myTimer = new MyTimer(60000, 1000);
                 myTimer.start();
-//                sendOtp();
+                sendOtp();
             }
         });
     }
@@ -155,7 +155,7 @@ public class LoginActivity extends AppCompatActivity {
 
     class MyTimer extends CountDownTimer {
 
-        public MyTimer(long millisInFuture, long countDownInterval) {
+        private MyTimer(long millisInFuture, long countDownInterval) {
             super(millisInFuture, countDownInterval);
         }
 
@@ -163,7 +163,8 @@ public class LoginActivity extends AppCompatActivity {
         public void onTick(long l) {
             int progress = (int) (l / 1000);
             txtStatus.setVisibility(View.VISIBLE);
-            txtStatus.setText("Resend OTP in: 00:" + String.valueOf(progress) + " seconds.");
+            txtStatus.setText(getResources().getText(R.string.txt_resend_otp_timer)
+                    + String.valueOf(progress) + " seconds.");
 
             progressBarLogin.setProgress(progressBarLogin.getMax() - progress);
         }
@@ -173,7 +174,7 @@ public class LoginActivity extends AppCompatActivity {
             progressBarLogin.setProgress(0);
             txtStatus.setText("");
             txtStatus.setVisibility(View.GONE);
-            btnSendOtp.setText("Resend OTP");
+            btnSendOtp.setText(getResources().getText(R.string.btn_resend_otp));
             btnSendOtp.setClickable(true);
             btnSendOtp.setEnabled(true);
         }
